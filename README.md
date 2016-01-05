@@ -1,5 +1,5 @@
 # player-entre-chien-et-loup
-audio player for urban ballad
+audio player for urban ballad http://www.cie-entrechienetloup.net/spectacles/verena-velvet.htm
 
 The audio player work with 1 dedicated electronic card (cf pcb folder)
 use atmega 328, vlsi vs1033/53, nordic NRF24L01+
