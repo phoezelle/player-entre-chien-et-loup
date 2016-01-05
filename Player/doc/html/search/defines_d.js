@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['sci_5faiaddr',['SCI_AIADDR',['../_the_player_def_8h.html#a955fead9f2f6647ccc8a083d45a5e811',1,'ThePlayerDef.h']]],
+  ['sci_5faictrl0',['SCI_AICTRL0',['../_the_player_def_8h.html#a0803dabe6c2a79d4ef6e3c2493ef7c2b',1,'ThePlayerDef.h']]],
+  ['sci_5faictrl1',['SCI_AICTRL1',['../_the_player_def_8h.html#aef063d30c43b96df9d3d3767ed80210e',1,'ThePlayerDef.h']]],
+  ['sci_5faictrl2',['SCI_AICTRL2',['../_the_player_def_8h.html#a7bdf3d16eae82d396ffc3fc6d0c209fa',1,'ThePlayerDef.h']]],
+  ['sci_5faictrl3',['SCI_AICTRL3',['../_the_player_def_8h.html#a69aed2a986aef3fc6f862ae295dc81b0',1,'ThePlayerDef.h']]],
+  ['sci_5faudata',['SCI_AUDATA',['../_the_player_def_8h.html#aae4836ab2e9b19aaa0441c859cdb1456',1,'ThePlayerDef.h']]],
+  ['sci_5fbass',['SCI_BASS',['../_the_player_def_8h.html#a1678887e1ea2a6f03ec762f7b351ab6b',1,'ThePlayerDef.h']]],
+  ['sci_5fclockf',['SCI_CLOCKF',['../_the_player_def_8h.html#a259006902b81270a1cd7506b3c315ee3',1,'ThePlayerDef.h']]],
+  ['sci_5fdecode_5ftime',['SCI_DECODE_TIME',['../_the_player_def_8h.html#ae70a5ef67f28bbbe578eca237450e3c1',1,'ThePlayerDef.h']]],
+  ['sci_5fhdat0',['SCI_HDAT0',['../_the_player_def_8h.html#a52c914a98de56acfa57a400781904c1a',1,'ThePlayerDef.h']]],
+  ['sci_5fhdat1',['SCI_HDAT1',['../_the_player_def_8h.html#abd1e9987a877ecdd8876cf8593882922',1,'ThePlayerDef.h']]],
+  ['sci_5fmode',['SCI_MODE',['../_the_player_def_8h.html#af7dc54392e24e95e8be62cea7896b926',1,'ThePlayerDef.h']]],
+  ['sci_5fstatus',['SCI_STATUS',['../_the_player_def_8h.html#add6851abf032886c9ba3fd4b63991c59',1,'ThePlayerDef.h']]],
+  ['sci_5fvol',['SCI_VOL',['../_the_player_def_8h.html#acbe16d04305413900b248ac13532f0de',1,'ThePlayerDef.h']]],
+  ['sci_5fwram',['SCI_WRAM',['../_the_player_def_8h.html#aff726bf42852036bacf19b4a15879344',1,'ThePlayerDef.h']]],
+  ['sci_5fwramaddr',['SCI_WRAMADDR',['../_the_player_def_8h.html#af2191d414c5eb3a2973ebf773c41b607',1,'ThePlayerDef.h']]],
+  ['sd_5fcs',['SD_CS',['../_the_player_def_8h.html#a7e2d8ef8f0724f23ce84b1e7d0c171d9',1,'ThePlayerDef.h']]]
+];

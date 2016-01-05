@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>vérénaV: Référence du fichier /Volumes/myDoc/Arduino/libraries/Remote/TheRemote.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">vérénaV
+   &#160;<span id="projectnumber">v2 - est-tu-là</span>
+   </div>
+   <div id="projectbrief">audio player for urban ballade</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_5c0e1f5ea96c86b8b347393f8d9460ed.html">Remote</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier TheRemote.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_the_remote_8h_source.html">TheRemote.h</a>&quot;</code><br />
+<code>#include &quot;WProgram.h&quot;</code><br />
+<code>#include &quot;Bounce.h&quot;</code><br />
+<code>#include &lt;SPI.h&gt;</code><br />
+<code>#include &lt;SoftwareSerial.h&gt;</code><br />
+<code>#include &quot;nRF24L01.h&quot;</code><br />
+<code>#include &quot;RF24.h&quot;</code><br />
+<code>#include &lt;EEPROM.h&gt;</code><br />
+</div>
+<p><a href="_the_remote_8cpp_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a33e01cb7949ffe3eca82d067a1e7add8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_remote_8cpp.html#a33e01cb7949ffe3eca82d067a1e7add8">R_SERIAL_DEBUG</a></td></tr>
+<tr class="separator:a33e01cb7949ffe3eca82d067a1e7add8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e4078bc34905308ac270a415f705c8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_remote_8cpp.html#a2e4078bc34905308ac270a415f705c8b">R_IF_SERIAL_DEBUG</a>(x)&#160;&#160;&#160;({x;})</td></tr>
+<tr class="separator:a2e4078bc34905308ac270a415f705c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a8c9a8ee5926c595ac451460d2b897b05"><td class="memItemLeft" align="right" valign="top">RF24&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_remote_8cpp.html#a8c9a8ee5926c595ac451460d2b897b05">radio</a> (5, 6)</td></tr>
+<tr class="separator:a8c9a8ee5926c595ac451460d2b897b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a12bc1cd9fcbf5cd2469063d515f00744"><td class="memItemLeft" align="right" valign="top">const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_remote_8cpp.html#a12bc1cd9fcbf5cd2469063d515f00744">sendingPrefix</a> = 0xF0FEE00000LL</td></tr>
+<tr class="separator:a12bc1cd9fcbf5cd2469063d515f00744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd928a6e0456394eb4f87164eb1ae80"><td class="memItemLeft" align="right" valign="top">SoftwareSerial&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_remote_8cpp.html#a4dd928a6e0456394eb4f87164eb1ae80">myLCD</a> = SoftwareSerial(-1, 9 )</td></tr>
+<tr class="separator:a4dd928a6e0456394eb4f87164eb1ae80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ee2b3c621fce5bacaa121fd692a07e6"><td class="memItemLeft" align="right" valign="top">volatile boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_remote_8cpp.html#a1ee2b3c621fce5bacaa121fd692a07e6">changeA</a> = false</td></tr>
+<tr class="separator:a1ee2b3c621fce5bacaa121fd692a07e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a98e9d44257802a65195367d8a35efd"><td class="memItemLeft" align="right" valign="top">Bounce&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_remote_8cpp.html#a4a98e9d44257802a65195367d8a35efd">buttonOK</a> = Bounce( 4 , 30)</td></tr>
+<tr class="separator:a4a98e9d44257802a65195367d8a35efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad634c45959de3707df3b2b2b781dcb26"><td class="memItemLeft" align="right" valign="top">Bounce&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_remote_8cpp.html#ad634c45959de3707df3b2b2b781dcb26">buttonUPDATE</a> = Bounce( 17 , 30)</td></tr>
+<tr class="separator:ad634c45959de3707df3b2b2b781dcb26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a2e4078bc34905308ac270a415f705c8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R_IF_SERIAL_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;({x;})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_remote_8cpp_source.html#l00022">22</a> du fichier <a class="el" href="_the_remote_8cpp_source.html">TheRemote.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_remote_8cpp_source.html#l00766">TheRemote::addIndexedValueToMessage()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00759">TheRemote::addValueToMessage()</a>, <a class="el" href="_the_remote_8cpp_source.html#l01094">TheRemote::buttonRoutine()</a>, <a class="el" href="_the_remote_8cpp_source.html#l01335">TheRemote::changeState()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00696">TheRemote::checkIncommingRF()</a>, <a class="el" href="_the_remote_8cpp_source.html#l01195">TheRemote::checkSerialforkeypad()</a>, <a class="el" href="_the_remote_8cpp_source.html#l01371">TheRemote::eepromWrite()</a>, <a class="el" href="_the_remote_8cpp_source.html#l01173">TheRemote::getBatteryStatus()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00104">TheRemote::init()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00949">TheRemote::initLCD()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00180">TheRemote::initMenu()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00158">TheRemote::initPin()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00510">TheRemote::initRF24()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00147">TheRemote::initRole()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00747">TheRemote::printfByte()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00751">TheRemote::printMessage()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00933">TheRemote::processValueFromPlayer()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00610">TheRemote::sendMessage()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00544">TheRemote::setAck()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00538">TheRemote::setListeningAddress()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00486">TheRemote::setValue()</a>, et <a class="el" href="_the_remote_8cpp_source.html#l00532">TheRemote::updateSendingAddress()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a33e01cb7949ffe3eca82d067a1e7add8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define R_SERIAL_DEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_remote_8cpp_source.html#l00020">20</a> du fichier <a class="el" href="_the_remote_8cpp_source.html">TheRemote.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a8c9a8ee5926c595ac451460d2b897b05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RF24 radio </td>
+          <td>(</td>
+          <td class="paramtype">5&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">6&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>instance of RF24 class for manage the Nordic NLRF24plus </p>
+
+<p>Référencé par <a class="el" href="_the_remote_8cpp_source.html#l00696">TheRemote::checkIncommingRF()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00510">TheRemote::initRF24()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00061">TheRemote::routine()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00610">TheRemote::sendMessage()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00551">TheRemote::sendValue()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00544">TheRemote::setAck()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00538">TheRemote::setListeningAddress()</a>, et <a class="el" href="_the_remote_8cpp_source.html#l00532">TheRemote::updateSendingAddress()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a4a98e9d44257802a65195367d8a35efd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bounce buttonOK = Bounce( 4 , 30)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_remote_8cpp_source.html#l00048">48</a> du fichier <a class="el" href="_the_remote_8cpp_source.html">TheRemote.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_remote_8cpp_source.html#l01094">TheRemote::buttonRoutine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad634c45959de3707df3b2b2b781dcb26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Bounce buttonUPDATE = Bounce( 17 , 30)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_remote_8cpp_source.html#l00049">49</a> du fichier <a class="el" href="_the_remote_8cpp_source.html">TheRemote.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_remote_8cpp_source.html#l01094">TheRemote::buttonRoutine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ee2b3c621fce5bacaa121fd692a07e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile boolean changeA = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_remote_8cpp_source.html#l00047">47</a> du fichier <a class="el" href="_the_remote_8cpp_source.html">TheRemote.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_remote_8cpp_source.html#l01049">TheRemote::checkRotary()</a>, <a class="el" href="_the_remote_8cpp_source.html#l01085">TheRemote::doEncoderA()</a>, et <a class="el" href="_the_remote_8cpp_source.html#l00061">TheRemote::routine()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4dd928a6e0456394eb4f87164eb1ae80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SoftwareSerial myLCD = SoftwareSerial(-1, 9 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_remote_8cpp_source.html#l00045">45</a> du fichier <a class="el" href="_the_remote_8cpp_source.html">TheRemote.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_remote_8cpp_source.html#l00999">TheRemote::addAllCharToLCD()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00976">TheRemote::boxCursorLCD()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00696">TheRemote::checkIncommingRF()</a>, <a class="el" href="_the_remote_8cpp_source.html#l01195">TheRemote::checkSerialforkeypad()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00970">TheRemote::clearLCD()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00377">TheRemote::displayValue()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00341">TheRemote::displayValueConnect()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00586">TheRemote::getValue()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00949">TheRemote::initLCD()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00180">TheRemote::initMenu()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00061">TheRemote::routine()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00959">TheRemote::selectLineOne()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00965">TheRemote::selectLineTwo()</a>, <a class="el" href="_the_remote_8cpp_source.html#l01041">TheRemote::sendCommandLCD()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00574">TheRemote::sendID()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00610">TheRemote::sendMessage()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00551">TheRemote::sendValue()</a>, <a class="el" href="_the_remote_8cpp_source.html#l00985">TheRemote::setSplashScreen()</a>, et <a class="el" href="_the_remote_8cpp_source.html#l00427">TheRemote::writeL()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a12bc1cd9fcbf5cd2469063d515f00744"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t sendingPrefix = 0xF0FEE00000LL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_remote_8cpp_source.html#l00038">38</a> du fichier <a class="el" href="_the_remote_8cpp_source.html">TheRemote.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_remote_8cpp_source.html#l00538">TheRemote::setListeningAddress()</a>, et <a class="el" href="_the_remote_8cpp_source.html#l00532">TheRemote::updateSendingAddress()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

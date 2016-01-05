@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>vérénaV:  Fichier source de /Volumes/myDoc/Arduino/libraries/SdFat/SdFatUtil.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">vérénaV
+   &#160;<span id="projectnumber">v2 - est-tu-là</span>
+   </div>
+   <div id="projectbrief">audio player for urban ballade</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="examples.html"><span>Exemples</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c69eab56e059d8c90f032dd13c50f52a.html">SdFat</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SdFatUtil.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sd_fat_util_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Arduino SdFat Library</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2012 by William Greiman</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This file is part of the Arduino SdFat Library</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * This Library is free software: you can redistribute it and/or modify</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * the Free Software Foundation, either version 3 of the License, or</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * (at your option) any later version.</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * This Library is distributed in the hope that it will be useful,</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * GNU General Public License for more details.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * You should have received a copy of the GNU General Public License</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * along with the Arduino SdFat Library.  If not, see</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * &lt;http://www.gnu.org/licenses/&gt;.</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef SdFatUtil_h</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define SdFatUtil_h</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sd_fat_8h.html">SdFat.h</a>&quot;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define PgmPrint(x) SerialPrint_P(PSTR(x))</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define PgmPrintln(x) SerialPrintln_P(PSTR(x))</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespace_sd_fat_util.html">   32</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_sd_fat_util.html">SdFatUtil</a> {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespace_sd_fat_util.html#a9103b9a4934cfc4d5dea9e7fec7353d1">FreeRam</a>();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="namespace_sd_fat_util.html#ad286914ceca90b6952327d90237d3e56">print_P</a>(Print* pr, PGM_P str);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="namespace_sd_fat_util.html#a59f16a2fc62ff5c3af0ec2f10edaf6a1">println_P</a>(Print* pr, PGM_P str);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">//----------------------------------------------------------------------------</span></div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespace_sd_fat_util.html#a97af8c0fb43dece0f32e5cbd36dfd34c">   54</a></span>&#160;<span class="comment"></span>  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespace_sd_fat_util.html#a97af8c0fb43dece0f32e5cbd36dfd34c">SerialPrint_P</a>(PGM_P str) {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="namespace_sd_fat_util.html#ad286914ceca90b6952327d90237d3e56">print_P</a>(&amp;Serial, str);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">//----------------------------------------------------------------------------</span></div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespace_sd_fat_util.html#a9b4dae4ef11bfdf2458295c5b7ac9102">   62</a></span>&#160;<span class="comment"></span>  <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespace_sd_fat_util.html#a9b4dae4ef11bfdf2458295c5b7ac9102">SerialPrintln_P</a>(PGM_P str) {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="namespace_sd_fat_util.html#a59f16a2fc62ff5c3af0ec2f10edaf6a1">println_P</a>(&amp;Serial, str);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace SdFatUtil</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespace_sd_fat_util.html">SdFatUtil</a>;  <span class="comment">// NOLINT</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif  // #define SdFatUtil_h</span></div><div class="ttc" id="namespace_sd_fat_util_html_a9103b9a4934cfc4d5dea9e7fec7353d1"><div class="ttname"><a href="namespace_sd_fat_util.html#a9103b9a4934cfc4d5dea9e7fec7353d1">SdFatUtil::FreeRam</a></div><div class="ttdeci">int FreeRam()</div><div class="ttdef"><b>Definition:</b> <a href="_sd_fat_util_8cpp_source.html#l00026">SdFatUtil.cpp:26</a></div></div>
+<div class="ttc" id="namespace_sd_fat_util_html_a59f16a2fc62ff5c3af0ec2f10edaf6a1"><div class="ttname"><a href="namespace_sd_fat_util.html#a59f16a2fc62ff5c3af0ec2f10edaf6a1">SdFatUtil::println_P</a></div><div class="ttdeci">void println_P(Print *pr, PGM_P str)</div><div class="ttdef"><b>Definition:</b> <a href="_sd_fat_util_8cpp_source.html#l00048">SdFatUtil.cpp:48</a></div></div>
+<div class="ttc" id="_sd_fat_8h_html"><div class="ttname"><a href="_sd_fat_8h.html">SdFat.h</a></div><div class="ttdoc">SdFat class. </div></div>
+<div class="ttc" id="namespace_sd_fat_util_html_a9b4dae4ef11bfdf2458295c5b7ac9102"><div class="ttname"><a href="namespace_sd_fat_util.html#a9b4dae4ef11bfdf2458295c5b7ac9102">SdFatUtil::SerialPrintln_P</a></div><div class="ttdeci">void SerialPrintln_P(PGM_P str)</div><div class="ttdef"><b>Definition:</b> <a href="_sd_fat_util_8h_source.html#l00062">SdFatUtil.h:62</a></div></div>
+<div class="ttc" id="namespace_sd_fat_util_html_a97af8c0fb43dece0f32e5cbd36dfd34c"><div class="ttname"><a href="namespace_sd_fat_util.html#a97af8c0fb43dece0f32e5cbd36dfd34c">SdFatUtil::SerialPrint_P</a></div><div class="ttdeci">void SerialPrint_P(PGM_P str)</div><div class="ttdef"><b>Definition:</b> <a href="_sd_fat_util_8h_source.html#l00054">SdFatUtil.h:54</a></div></div>
+<div class="ttc" id="namespace_sd_fat_util_html"><div class="ttname"><a href="namespace_sd_fat_util.html">SdFatUtil</a></div><div class="ttdef"><b>Definition:</b> <a href="_sd_fat_util_8h_source.html#l00032">SdFatUtil.h:32</a></div></div>
+<div class="ttc" id="namespace_sd_fat_util_html_ad286914ceca90b6952327d90237d3e56"><div class="ttname"><a href="namespace_sd_fat_util.html#ad286914ceca90b6952327d90237d3e56">SdFatUtil::print_P</a></div><div class="ttdeci">void print_P(Print *pr, PGM_P str)</div><div class="ttdef"><b>Definition:</b> <a href="_sd_fat_util_8cpp_source.html#l00042">SdFatUtil.cpp:42</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

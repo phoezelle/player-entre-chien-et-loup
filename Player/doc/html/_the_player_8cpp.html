@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>vérénaV: Référence du fichier ThePlayer.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">vérénaV
+   &#160;<span id="projectnumber">v2 - est-tu-là</span>
+   </div>
+   <div id="projectbrief">audio player for urban ballade</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier ThePlayer.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_the_player_8h_source.html">ThePlayer.h</a>&quot;</code><br />
+<code>#include &quot;WProgram.h&quot;</code><br />
+<code>#include &lt;SdFat.h&gt;</code><br />
+<code>#include &lt;EEPROM.h&gt;</code><br />
+<code>#include &quot;nRF24L01.h&quot;</code><br />
+<code>#include &quot;RF24.h&quot;</code><br />
+<code>#include &lt;<a class="el" href="_memory_free_8h_source.html">MemoryFree.h</a>&gt;</code><br />
+<code>#include &lt;avr/sleep.h&gt;</code><br />
+<code>#include &lt;avr/wdt.h&gt;</code><br />
+</div>
+<p><a href="_the_player_8cpp_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aa0c3fee6bf2e66a0e428b963bf9c38b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_player_8cpp.html#aa0c3fee6bf2e66a0e428b963bf9c38b4">M_IF_SERIAL_DEBUG</a>(x)</td></tr>
+<tr class="separator:aa0c3fee6bf2e66a0e428b963bf9c38b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2bcdca81a959a7d09f03a3487616d42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_player_8cpp.html#aa2bcdca81a959a7d09f03a3487616d42">I_SERIAL_DEBUG</a></td></tr>
+<tr class="separator:aa2bcdca81a959a7d09f03a3487616d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a219f23eeef03908c5ce98be7e5a099a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_player_8cpp.html#a219f23eeef03908c5ce98be7e5a099a2">I_IF_SERIAL_DEBUG</a>(x)&#160;&#160;&#160;({x;})</td></tr>
+<tr class="separator:a219f23eeef03908c5ce98be7e5a099a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc840a0d2f999627427d9ef4506acf5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_player_8cpp.html#a1dc840a0d2f999627427d9ef4506acf5">error</a>(s)&#160;&#160;&#160;sd.errorHalt_P(PSTR(s))</td></tr>
+<tr class="separator:a1dc840a0d2f999627427d9ef4506acf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a8c9a8ee5926c595ac451460d2b897b05"><td class="memItemLeft" align="right" valign="top">RF24&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_player_8cpp.html#a8c9a8ee5926c595ac451460d2b897b05">radio</a> (5, 6)</td></tr>
+<tr class="separator:a8c9a8ee5926c595ac451460d2b897b05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a12bc1cd9fcbf5cd2469063d515f00744"><td class="memItemLeft" align="right" valign="top">const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_the_player_8cpp.html#a12bc1cd9fcbf5cd2469063d515f00744">sendingPrefix</a> = 0xF0FEE00000LL</td></tr>
+<tr class="separator:a12bc1cd9fcbf5cd2469063d515f00744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des macros</h2>
+<a class="anchor" id="a1dc840a0d2f999627427d9ef4506acf5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define error</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s</td><td>)</td>
+          <td>&#160;&#160;&#160;sd.errorHalt_P(PSTR(s))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_player_8cpp_source.html#l00050">50</a> du fichier <a class="el" href="_the_player_8cpp_source.html">ThePlayer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a219f23eeef03908c5ce98be7e5a099a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_IF_SERIAL_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;({x;})</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_player_8cpp_source.html#l00038">38</a> du fichier <a class="el" href="_the_player_8cpp_source.html">ThePlayer.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_player_8cpp_source.html#l00346">ThePlayer::checkIncommingRF()</a>, <a class="el" href="_the_player_8cpp_source.html#l00766">ThePlayer::checkToPlayTrack()</a>, <a class="el" href="_the_player_8cpp_source.html#l01050">ThePlayer::eepromWrite()</a>, <a class="el" href="_the_player_8cpp_source.html#l00134">ThePlayer::init()</a>, <a class="el" href="_the_player_8cpp_source.html#l00252">ThePlayer::initMP3()</a>, <a class="el" href="_the_player_8cpp_source.html#l00294">ThePlayer::initRF24()</a>, <a class="el" href="_the_player_8cpp_source.html#l00215">ThePlayer::initRole()</a>, <a class="el" href="_the_player_8cpp_source.html#l00227">ThePlayer::initSD()</a>, <a class="el" href="_the_player_8cpp_source.html#l00659">ThePlayer::play()</a>, <a class="el" href="_the_player_8cpp_source.html#l00805">ThePlayer::runBaseLoop()</a>, et <a class="el" href="_the_player_8cpp_source.html#l00893">ThePlayer::tryconnectPlayer()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2bcdca81a959a7d09f03a3487616d42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_SERIAL_DEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_player_8cpp_source.html#l00036">36</a> du fichier <a class="el" href="_the_player_8cpp_source.html">ThePlayer.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0c3fee6bf2e66a0e428b963bf9c38b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_IF_SERIAL_DEBUG</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_player_8cpp_source.html#l00031">31</a> du fichier <a class="el" href="_the_player_8cpp_source.html">ThePlayer.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_player_8cpp_source.html#l00959">ThePlayer::baseSleepTotal()</a>, <a class="el" href="_the_player_8cpp_source.html#l00346">ThePlayer::checkIncommingRF()</a>, <a class="el" href="_the_player_8cpp_source.html#l00766">ThePlayer::checkToPlayTrack()</a>, <a class="el" href="_the_player_8cpp_source.html#l01015">ThePlayer::eepromReadAll()</a>, <a class="el" href="_the_player_8cpp_source.html#l01147">ThePlayer::getBatteryStatus()</a>, <a class="el" href="_the_player_8cpp_source.html#l00134">ThePlayer::init()</a>, <a class="el" href="_the_player_8cpp_source.html#l00252">ThePlayer::initMP3()</a>, <a class="el" href="_the_player_8cpp_source.html#l00294">ThePlayer::initRF24()</a>, <a class="el" href="_the_player_8cpp_source.html#l00227">ThePlayer::initSD()</a>, <a class="el" href="_the_player_8cpp_source.html#l00637">ThePlayer::logInSD()</a>, <a class="el" href="_the_player_8cpp_source.html#l01128">ThePlayer::Mp3SetVolume()</a>, <a class="el" href="_the_player_8cpp_source.html#l00659">ThePlayer::play()</a>, <a class="el" href="_the_player_8cpp_source.html#l00550">ThePlayer::printfByte()</a>, <a class="el" href="_the_player_8cpp_source.html#l00554">ThePlayer::printMessage()</a>, <a class="el" href="_the_player_8cpp_source.html#l00077">ThePlayer::routine()</a>, <a class="el" href="_the_player_8cpp_source.html#l00805">ThePlayer::runBaseLoop()</a>, <a class="el" href="_the_player_8cpp_source.html#l00483">ThePlayer::setAckforBase()</a>, <a class="el" href="_the_player_8cpp_source.html#l00477">ThePlayer::setAckforRemote()</a>, <a class="el" href="_the_player_8cpp_source.html#l01032">ThePlayer::setDefaultConfig()</a>, <a class="el" href="_the_player_8cpp_source.html#l00489">ThePlayer::setRF24Power()</a>, <a class="el" href="_the_player_8cpp_source.html#l00743">ThePlayer::startChangeVolume()</a>, <a class="el" href="_the_player_8cpp_source.html#l00893">ThePlayer::tryconnectPlayer()</a>, <a class="el" href="_the_player_8cpp_source.html#l00510">ThePlayer::updateAckforRemote()</a>, et <a class="el" href="_the_player_8cpp_source.html#l00532">ThePlayer::updateAckforRemoteForMemory()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="a8c9a8ee5926c595ac451460d2b897b05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RF24 radio </td>
+          <td>(</td>
+          <td class="paramtype">5&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">6&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>instance of RF24 class for manage the Nordic NLRF24plus </p>
+
+<p>Référencé par <a class="el" href="_the_player_8cpp_source.html#l00959">ThePlayer::baseSleepTotal()</a>, <a class="el" href="_the_player_8cpp_source.html#l00346">ThePlayer::checkIncommingRF()</a>, <a class="el" href="_the_player_8cpp_source.html#l00294">ThePlayer::initRF24()</a>, <a class="el" href="_the_player_8cpp_source.html#l00323">ThePlayer::playerTryToConnectBase()</a>, <a class="el" href="_the_player_8cpp_source.html#l00805">ThePlayer::runBaseLoop()</a>, <a class="el" href="_the_player_8cpp_source.html#l00483">ThePlayer::setAckforBase()</a>, <a class="el" href="_the_player_8cpp_source.html#l00477">ThePlayer::setAckforRemote()</a>, <a class="el" href="_the_player_8cpp_source.html#l00489">ThePlayer::setRF24Power()</a>, <a class="el" href="_the_player_8cpp_source.html#l00893">ThePlayer::tryconnectPlayer()</a>, <a class="el" href="_the_player_8cpp_source.html#l00464">ThePlayer::updateListeningAddress()</a>, et <a class="el" href="_the_player_8cpp_source.html#l00451">ThePlayer::updateSendingAddress()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="a12bc1cd9fcbf5cd2469063d515f00744"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint64_t sendingPrefix = 0xF0FEE00000LL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_the_player_8cpp_source.html#l00055">55</a> du fichier <a class="el" href="_the_player_8cpp_source.html">ThePlayer.cpp</a>.</p>
+
+<p>Référencé par <a class="el" href="_the_player_8cpp_source.html#l00464">ThePlayer::updateListeningAddress()</a>, et <a class="el" href="_the_player_8cpp_source.html#l00451">ThePlayer::updateSendingAddress()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

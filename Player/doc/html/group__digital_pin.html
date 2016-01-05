@@ -1,0 +1,1043 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>vérénaV: Fast Pin I/O</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">vérénaV
+   &#160;<span id="projectnumber">v2 - est-tu-là</span>
+   </div>
+   <div id="projectbrief">audio player for urban ballade</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li class="current"><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="examples.html"><span>Exemples</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Fast Pin I/O</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:class_digital_pin"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin&lt; PinNumber &gt;</a></td></tr>
+<tr class="memdesc:class_digital_pin"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fast digital port I/O.  <a href="group__digital_pin.html#class_digital_pin">Plus de détails...</a><br /></td></tr>
+<tr class="separator:class_digital_pin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga9e189054da62dc9c288a926a1079358e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga9e189054da62dc9c288a926a1079358e">__attribute__</a> ((always_inline)) bool fastDigitalRead(uint8_t pin)</td></tr>
+<tr class="separator:ga9e189054da62dc9c288a926a1079358e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a94475a4246cb2279a1b6d1090f84ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga6a94475a4246cb2279a1b6d1090f84ac">badPinNumber</a> (void) <a class="el" href="main_8cpp.html#a904bedb53499c7a4a9c47e84bbe2b05b">__attribute__</a>((error(&quot;Pin number is too large or not a const ant&quot;)))</td></tr>
+<tr class="separator:ga6a94475a4246cb2279a1b6d1090f84ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85c3841bd970c06a711440166130e71c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga85c3841bd970c06a711440166130e71c">if</a> (address &gt; reinterpret_cast&lt; uint8_t * &gt;(0X5F))</td></tr>
+<tr class="separator:ga85c3841bd970c06a711440166130e71c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4adc306038cf7fb6fd42255194822fb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga4adc306038cf7fb6fd42255194822fb3">if</a> (<a class="el" href="group__digital_pin.html#ga1ad37212130d4996d44e5cfa47d053c8">level</a>)</td></tr>
+<tr class="separator:ga4adc306038cf7fb6fd42255194822fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad0ab504cdbfd3a66329b31037d9ff281"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#gad0ab504cdbfd3a66329b31037d9ff281">fastBitWriteSafe</a> (<a class="el" href="group__digital_pin.html#gaec8ca9b102cdb9909960083a1b38d90c">pinMap</a>[pin].port, <a class="el" href="group__digital_pin.html#gaec8ca9b102cdb9909960083a1b38d90c">pinMap</a>[pin].<a class="el" href="group__digital_pin.html#gad15e9d6879273cee61ab5b915db182a7">bit</a>, <a class="el" href="group__digital_pin.html#ga1ad37212130d4996d44e5cfa47d053c8">level</a>)</td></tr>
+<tr class="separator:gad0ab504cdbfd3a66329b31037d9ff281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga251e643b0e2a8cb7e5925ea6c9181c78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga251e643b0e2a8cb7e5925ea6c9181c78">fastBitWriteSafe</a> (<a class="el" href="group__digital_pin.html#gaec8ca9b102cdb9909960083a1b38d90c">pinMap</a>[pin].ddr, <a class="el" href="group__digital_pin.html#gaec8ca9b102cdb9909960083a1b38d90c">pinMap</a>[pin].<a class="el" href="group__digital_pin.html#gad15e9d6879273cee61ab5b915db182a7">bit</a>, <a class="el" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a>)</td></tr>
+<tr class="separator:ga251e643b0e2a8cb7e5925ea6c9181c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17778c1e9b0443c03cf406e4dcdcd78e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga17778c1e9b0443c03cf406e4dcdcd78e">fastDigitalWrite</a> (pin, <a class="el" href="group__digital_pin.html#ga1ad37212130d4996d44e5cfa47d053c8">level</a>)</td></tr>
+<tr class="separator:ga17778c1e9b0443c03cf406e4dcdcd78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga0376be5904d0dd864b7d97c9ce1295ab"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga0376be5904d0dd864b7d97c9ce1295ab">value</a></td></tr>
+<tr class="separator:ga0376be5904d0dd864b7d97c9ce1295ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec8ca9b102cdb9909960083a1b38d90c"><td class="memItemLeft" align="right" valign="top">static const pin_map_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#gaec8ca9b102cdb9909960083a1b38d90c">pinMap</a> []</td></tr>
+<tr class="separator:gaec8ca9b102cdb9909960083a1b38d90c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ba5f4d8ff10e60ec2d424722dd9fe92"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga3ba5f4d8ff10e60ec2d424722dd9fe92">digitalPinCount</a> = sizeof(<a class="el" href="group__digital_pin.html#gaec8ca9b102cdb9909960083a1b38d90c">pinMap</a>)/sizeof(pin_map_t)</td></tr>
+<tr class="separator:ga3ba5f4d8ff10e60ec2d424722dd9fe92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad15e9d6879273cee61ab5b915db182a7"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#gad15e9d6879273cee61ab5b915db182a7">bit</a></td></tr>
+<tr class="separator:gad15e9d6879273cee61ab5b915db182a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ad37212130d4996d44e5cfa47d053c8"><td class="memItemLeft" align="right" valign="top">static uint8_t bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga1ad37212130d4996d44e5cfa47d053c8">level</a></td></tr>
+<tr class="separator:ga1ad37212130d4996d44e5cfa47d053c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0544c3fe466e421738dae463968b70ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga0544c3fe466e421738dae463968b70ba">else</a></td></tr>
+<tr class="separator:ga0544c3fe466e421738dae463968b70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7cb92bda93b62566af3f8a8bbf68b5b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a></td></tr>
+<tr class="separator:gaa7cb92bda93b62566af3f8a8bbf68b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c1dfc1ccf00a08192611433ee7f17b4"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unioncsd__t.html">csd_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ga8c1dfc1ccf00a08192611433ee7f17b4">__attribute__</a></td></tr>
+<tr class="separator:ga8c1dfc1ccf00a08192611433ee7f17b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<p>Fast Digital I/O functions and template class. </p>
+<hr/><h2 class="groupheader">Documentation des classes</h2>
+<a name="class_digital_pin" id="class_digital_pin"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">class DigitalPin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><h3>template&lt;uint8_t PinNumber&gt;<br />
+class DigitalPin&lt; PinNumber &gt;</h3>
+
+<p>Fast digital port I/O. </p>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00599">599</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h3>Fonctions membres publiques</h3></td></tr>
+<tr class="memitem:ab68480b09df5c4794c95cdf2230d4c55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ab68480b09df5c4794c95cdf2230d4c55">DigitalPin</a> ()</td></tr>
+<tr class="separator:ab68480b09df5c4794c95cdf2230d4c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a099543ea462aed58ee4ab86a4046b0b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#a099543ea462aed58ee4ab86a4046b0b3">DigitalPin</a> (bool pinMode)</td></tr>
+<tr class="separator:a099543ea462aed58ee4ab86a4046b0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9aab88abca3d2eb733a68a989735028"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ae9aab88abca3d2eb733a68a989735028">DigitalPin</a> (bool <a class="el" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a>, bool <a class="el" href="group__digital_pin.html#af695f09ef301abd39ef61868009afb65">level</a>)</td></tr>
+<tr class="separator:ae9aab88abca3d2eb733a68a989735028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd165a425e413a19936c0b679f06721"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#a4bd165a425e413a19936c0b679f06721">operator=</a> (bool <a class="el" href="group__digital_pin.html#ga0376be5904d0dd864b7d97c9ce1295ab">value</a>) <a class="el" href="group__digital_pin.html#a417cb77a97607a50229b8c14d7a175c1">__attribute__</a>((always_inline))</td></tr>
+<tr class="separator:a4bd165a425e413a19936c0b679f06721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad023b1932c2e4c9f7439a9dc18693928"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ad023b1932c2e4c9f7439a9dc18693928">operator bool</a> () const <a class="el" href="group__digital_pin.html#a417cb77a97607a50229b8c14d7a175c1">__attribute__</a>((always_inline))</td></tr>
+<tr class="separator:ad023b1932c2e4c9f7439a9dc18693928"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417cb77a97607a50229b8c14d7a175c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#a417cb77a97607a50229b8c14d7a175c1">__attribute__</a> ((always_inline)) void config(bool <a class="el" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a></td></tr>
+<tr class="separator:a417cb77a97607a50229b8c14d7a175c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa7e041bc461fd606a8addde8d3e626"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#a9aa7e041bc461fd606a8addde8d3e626">__attribute__</a> ((always_inline)) void high()</td></tr>
+<tr class="separator:a9aa7e041bc461fd606a8addde8d3e626"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92fe52bb4eed0980341d3648a4728370"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#a92fe52bb4eed0980341d3648a4728370">__attribute__</a> ((always_inline)) void low()</td></tr>
+<tr class="separator:a92fe52bb4eed0980341d3648a4728370"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada14a653dd13b11a76a15cfc97119b82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ada14a653dd13b11a76a15cfc97119b82">__attribute__</a> ((always_inline)) void <a class="el" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a>(bool pinMode)</td></tr>
+<tr class="separator:ada14a653dd13b11a76a15cfc97119b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545c060279d9378f8b425e7e7436e403"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#a545c060279d9378f8b425e7e7436e403">__attribute__</a> ((always_inline)) bool read() const </td></tr>
+<tr class="separator:a545c060279d9378f8b425e7e7436e403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2241ba366410e362e614e9e67c8c1c5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#a2241ba366410e362e614e9e67c8c1c5a">__attribute__</a> ((always_inline)) void toggle()</td></tr>
+<tr class="separator:a2241ba366410e362e614e9e67c8c1c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b41de03a4f7800b25702c99cda6ad5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#ac2b41de03a4f7800b25702c99cda6ad5">__attribute__</a> ((always_inline)) void write(bool <a class="el" href="group__digital_pin.html#ga0376be5904d0dd864b7d97c9ce1295ab">value</a>)</td></tr>
+<tr class="separator:ac2b41de03a4f7800b25702c99cda6ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><h3>Attributs publics</h3></td></tr>
+<tr class="memitem:af695f09ef301abd39ef61868009afb65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__digital_pin.html#af695f09ef301abd39ef61868009afb65">level</a></td></tr>
+<tr class="separator:af695f09ef301abd39ef61868009afb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h4 class="groupheader">Documentation des constructeurs et destructeur</h4>
+<a class="anchor" id="ab68480b09df5c4794c95cdf2230d4c55"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::<a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor </p>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00603">603</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;{}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a099543ea462aed58ee4ab86a4046b0b3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::<a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>pinMode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinMode</td><td>if true set output mode else input mode. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00608">608</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;                                    {</div><div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;    <a class="code" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a>(pinMode);</div><div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;  }</div><div class="ttc" id="group__digital_pin_html_gaa7cb92bda93b62566af3f8a8bbf68b5b"><div class="ttname"><a href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a></div><div class="ttdeci">static bool mode</div><div class="ttdef"><b>Definition:</b> <a href="_digital_pin_8h_source.html#l00575">DigitalPin.h:575</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae9aab88abca3d2eb733a68a989735028"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::<a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>If true set output mode else input mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>If mode is output, set level high/low. If mode is input, enable or disable the pin's 20K pull-up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00617">617</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;                                    {</div><div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    config(<a class="code" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a>, <a class="code" href="group__digital_pin.html#af695f09ef301abd39ef61868009afb65">level</a>);</div><div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;  }</div><div class="ttc" id="group__digital_pin_html_af695f09ef301abd39ef61868009afb65"><div class="ttname"><a href="group__digital_pin.html#af695f09ef301abd39ef61868009afb65">DigitalPin::level</a></div><div class="ttdeci">bool level</div><div class="ttdef"><b>Definition:</b> <a href="_digital_pin_8h_source.html#l00645">DigitalPin.h:645</a></div></div>
+<div class="ttc" id="group__digital_pin_html_gaa7cb92bda93b62566af3f8a8bbf68b5b"><div class="ttname"><a href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a></div><div class="ttdeci">static bool mode</div><div class="ttdef"><b>Definition:</b> <a href="_digital_pin_8h_source.html#l00575">DigitalPin.h:575</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h4 class="groupheader">Documentation des fonctions membres</h4>
+<a class="anchor" id="a417cb77a97607a50229b8c14d7a175c1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>set pin configuration </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>If true set output mode else input mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>If mode is output, set level high/low. If mode is input, enable or disable the pin's 20K pull-up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9aa7e041bc461fd606a8addde8d3e626"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set pin level high if output mode or enable 20K pull-up if input mode. </p>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00652">652</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;              {</div><div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    write(<span class="keyword">true</span>);</div><div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a92fe52bb4eed0980341d3648a4728370"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set pin level low if output mode or disable 20K pull-up if input mode. </p>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00660">660</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;             {</div><div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    write(<span class="keyword">false</span>);</div><div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ada14a653dd13b11a76a15cfc97119b82"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set pin mode </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pinMode</td><td>if true set output mode else input mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p><a class="el" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode()</a> does not enable or disable the 20K pull-up for input mode. </p>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00671">671</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                          {</div><div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    fastPinMode(PinNumber, pinMode);</div><div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a545c060279d9378f8b425e7e7436e403"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Renvoie</dt><dd>Pin's level </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00677">677</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;                    {</div><div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    <span class="keywordflow">return</span> fastDigitalRead(PinNumber);</div><div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2241ba366410e362e614e9e67c8c1c5a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>toggle a pin</p>
+<p>If the pin is in output mode toggle the pin's level. If the pin is in input mode toggle the state of the 20K pull-up. </p>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00687">687</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                {</div><div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    fastDigitalToggle(PinNumber);</div><div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac2b41de03a4f7800b25702c99cda6ad5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Write the pin's level. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>If true set the pin's level high else set the pin's level low. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00696">696</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;                         {</div><div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <a class="code" href="group__digital_pin.html#ga17778c1e9b0443c03cf406e4dcdcd78e">fastDigitalWrite</a>(PinNumber, <a class="code" href="group__digital_pin.html#ga0376be5904d0dd864b7d97c9ce1295ab">value</a>);</div><div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  }</div><div class="ttc" id="group__digital_pin_html_ga0376be5904d0dd864b7d97c9ce1295ab"><div class="ttname"><a href="group__digital_pin.html#ga0376be5904d0dd864b7d97c9ce1295ab">value</a></div><div class="ttdeci">static bool value</div><div class="ttdef"><b>Definition:</b> <a href="_digital_pin_8h_source.html#l00048">DigitalPin.h:48</a></div></div>
+<div class="ttc" id="group__digital_pin_html_ga17778c1e9b0443c03cf406e4dcdcd78e"><div class="ttname"><a href="group__digital_pin.html#ga17778c1e9b0443c03cf406e4dcdcd78e">fastDigitalWrite</a></div><div class="ttdeci">fastDigitalWrite(pin, level)</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad023b1932c2e4c9f7439a9dc18693928"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parenthesis operator </p><dl class="section return"><dt>Renvoie</dt><dd>Pin's level </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00635">635</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;                                                              {</div><div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keywordflow">return</span> read();</div><div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4bd165a425e413a19936c0b679f06721"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&amp; <a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Asignment operator </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>If true set the pin's level high else set the pin's level low.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>This <a class="el" href="group__digital_pin.html#class_digital_pin" title="Fast digital port I/O. ">DigitalPin</a> instance. </dd></dl>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00627">627</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                                                                             {</div><div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    write(<a class="code" href="group__digital_pin.html#ga0376be5904d0dd864b7d97c9ce1295ab">value</a>);</div><div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;  }</div><div class="ttc" id="group__digital_pin_html_ga0376be5904d0dd864b7d97c9ce1295ab"><div class="ttname"><a href="group__digital_pin.html#ga0376be5904d0dd864b7d97c9ce1295ab">value</a></div><div class="ttdeci">static bool value</div><div class="ttdef"><b>Definition:</b> <a href="_digital_pin_8h_source.html#l00048">DigitalPin.h:48</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h4 class="groupheader">Documentation des données membres</h4>
+<a class="anchor" id="af695f09ef301abd39ef61868009afb65"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint8_t PinNumber&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="group__digital_pin.html#class_digital_pin">DigitalPin</a>&lt; PinNumber &gt;::level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">{</div><div class="line">    fastPinConfig(PinNumber, <a class="code" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a>, <a class="code" href="group__digital_pin.html#af695f09ef301abd39ef61868009afb65">level</a>)</div></div><!-- fragment -->
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00645">645</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a class="anchor" id="ga9e189054da62dc9c288a926a1079358e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static __attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(always_inline)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>read pin value </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>value read</dd></dl>
+<p>Set pin value </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>value to write</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Check for valid pin number </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Number of pin to be checked.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>fast write helper </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>I/O register address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit</td><td>bit number to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>value for bit</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>toggle a pin </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If the pin is in output mode toggle the pin level. If the pin is in input mode toggle the state of the 20K pull-up.</p>
+<p>set pin mode </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>if true set output mode else input mode</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>fastPinMode does not enable or disable the 20K pull-up for input mode.</p>
+<p>set pin configuration </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>If true set output mode else input mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>If mode is output, set level high/low. If mode is input, enable or disable the pin's 20K pull-up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00038">38</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+<p>Référencé par <a class="el" href="_digital_pin_8h_source.html#l00635">DigitalPin&lt; PinNumber &gt;::operator bool()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                  {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> *portInputRegister(pin);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga6a94475a4246cb2279a1b6d1090f84ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void badPinNumber </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>generate bad pin number error </p>
+
+</div>
+</div>
+<a class="anchor" id="gad0ab504cdbfd3a66329b31037d9ff281"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fastBitWriteSafe </td>
+          <td>(</td>
+          <td class="paramtype">pinMap.&#160;</td>
+          <td class="paramname"><em>port</em>[pin], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pinMap.&#160;</td>
+          <td class="paramname"><em>bit</em>[pin], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__digital_pin.html#ga1ad37212130d4996d44e5cfa47d053c8">level</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga251e643b0e2a8cb7e5925ea6c9181c78"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fastBitWriteSafe </td>
+          <td>(</td>
+          <td class="paramtype">pinMap.&#160;</td>
+          <td class="paramname"><em>ddr</em>[pin], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pinMap.&#160;</td>
+          <td class="paramname"><em>bit</em>[pin], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__digital_pin.html#gaa7cb92bda93b62566af3f8a8bbf68b5b">mode</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga17778c1e9b0443c03cf406e4dcdcd78e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fastDigitalWrite </td>
+          <td>(</td>
+          <td class="paramtype">pin&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__digital_pin.html#ga1ad37212130d4996d44e5cfa47d053c8">level</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Référencé par <a class="el" href="_digital_pin_8h_source.html#l00696">DigitalPin&lt; PinNumber &gt;::__attribute__()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga85c3841bd970c06a711440166130e71c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">address&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">reinterpret_cast&lt; uint8_t * &gt;&#160;</td>
+          <td class="paramname">0X5F&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00516">516</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+<p>Référencé par <a class="el" href="_sd_spi_card_8cpp_source.html#l00050">CRC_CCITT()</a>, <a class="el" href="_fat_file_l_f_n_8cpp_source.html#l00288">FatFile::open()</a>, et <a class="el" href="_fat_file_s_f_n_8cpp_source.html#l00048">FatFile::printSFN()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;                                                  {</div><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    oldSREG = SREG;</div><div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    cli();</div><div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ga4adc306038cf7fb6fd42255194822fb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__digital_pin.html#ga1ad37212130d4996d44e5cfa47d053c8">level</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00520">520</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;             {</div><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    *address |= 1 &lt;&lt; <a class="code" href="group__digital_pin.html#gad15e9d6879273cee61ab5b915db182a7">bit</a>;</div><div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  } <span class="keywordflow">else</span> {</div><div class="ttc" id="group__digital_pin_html_gad15e9d6879273cee61ab5b915db182a7"><div class="ttname"><a href="group__digital_pin.html#gad15e9d6879273cee61ab5b915db182a7">bit</a></div><div class="ttdeci">static uint8_t bit</div><div class="ttdef"><b>Definition:</b> <a href="_digital_pin_8h_source.html#l00514">DigitalPin.h:514</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a class="anchor" id="ga8c1dfc1ccf00a08192611433ee7f17b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">__attribute__</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set pin value </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>value to write</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Check for valid pin number </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Number of pin to be checked.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>fast write helper </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>I/O register address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bit</td><td>bit number to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>value for bit</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>read pin value </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>value read</dd></dl>
+<p>toggle a pin </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If the pin is in output mode toggle the pin level. If the pin is in input mode toggle the state of the 20K pull-up.</p>
+<p>set pin mode </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>if true set output mode else input mode</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>fastPinMode does not enable or disable the 20K pull-up for input mode.</p>
+<p>set pin configuration </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>Arduino pin number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>If true set output mode else input mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>If mode is output, set level high/low. If mode is input, enable or disable the pin's 20K pull-up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00501">501</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                              {</div><div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <span class="keywordflow">if</span> (!__builtin_constant_p(pin) || pin &gt;= <a class="code" href="group__digital_pin.html#ga3ba5f4d8ff10e60ec2d424722dd9fe92">digitalPinCount</a>) {</div><div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <a class="code" href="group__digital_pin.html#ga6a94475a4246cb2279a1b6d1090f84ac">badPinNumber</a>();</div><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  }</div><div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;}</div><div class="ttc" id="group__digital_pin_html_ga3ba5f4d8ff10e60ec2d424722dd9fe92"><div class="ttname"><a href="group__digital_pin.html#ga3ba5f4d8ff10e60ec2d424722dd9fe92">digitalPinCount</a></div><div class="ttdeci">static const uint8_t digitalPinCount</div><div class="ttdef"><b>Definition:</b> <a href="_digital_pin_8h_source.html#l00492">DigitalPin.h:492</a></div></div>
+<div class="ttc" id="group__digital_pin_html_ga6a94475a4246cb2279a1b6d1090f84ac"><div class="ttname"><a href="group__digital_pin.html#ga6a94475a4246cb2279a1b6d1090f84ac">badPinNumber</a></div><div class="ttdeci">void badPinNumber(void) __attribute__((error(&quot;Pin number is too large or not a const ant&quot;)))</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="gad15e9d6879273cee61ab5b915db182a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t bit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00514">514</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+<p>Référencé par <a class="el" href="_soft_s_p_i_8h_source.html#l00129">SoftSPI&lt; MisoPin, MosiPin, SckPin, Mode &gt;::if()</a>, <a class="el" href="_digital_pin_8h_source.html#l00520">if()</a>, <a class="el" href="_fat_file_l_f_n_8cpp_source.html#l00177">FatFile::parsePathName()</a>, et <a class="el" href="_fat_file_s_f_n_8cpp_source.html#l00048">FatFile::printSFN()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga3ba5f4d8ff10e60ec2d424722dd9fe92"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t digitalPinCount = sizeof(<a class="el" href="group__digital_pin.html#gaec8ca9b102cdb9909960083a1b38d90c">pinMap</a>)/sizeof(pin_map_t)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>count of pins </p>
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00492">492</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0544c3fe466e421738dae463968b70ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">{</div><div class="line">    *address &amp;= ~(1 &lt;&lt; <a class="code" href="group__digital_pin.html#gad15e9d6879273cee61ab5b915db182a7">bit</a>)</div><div class="ttc" id="group__digital_pin_html_gad15e9d6879273cee61ab5b915db182a7"><div class="ttname"><a href="group__digital_pin.html#gad15e9d6879273cee61ab5b915db182a7">bit</a></div><div class="ttdeci">static uint8_t bit</div><div class="ttdef"><b>Definition:</b> <a href="_digital_pin_8h_source.html#l00514">DigitalPin.h:514</a></div></div>
+</div><!-- fragment -->
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00522">522</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1ad37212130d4996d44e5cfa47d053c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool bool level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">{</div><div class="line">  uint8_t oldSREG</div></div><!-- fragment -->
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00514">514</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa7cb92bda93b62566af3f8a8bbf68b5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">{</div><div class="line">  badPinCheck(pin)</div></div><!-- fragment -->
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00575">575</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+<p>Référencé par <a class="el" href="_digital_pin_8h_source.html#l00608">DigitalPin&lt; PinNumber &gt;::DigitalPin()</a>, <a class="el" href="_stdio_stream_8h_source.html#l00169">StdioStream::fgetc()</a>, <a class="el" href="fstream_8h_source.html#l00074">fstream::fstream()</a>, <a class="el" href="fstream_8h_source.html#l00182">ifstream::ifstream()</a>, <a class="el" href="fstream_8h_source.html#l00251">ofstream::ofstream()</a>, <a class="el" href="_fat_file_system_8h_source.html#l00082">FatFileSystem::open()</a>, <a class="el" href="fstream_8h_source.html#l00115">fstream::open()</a>, <a class="el" href="fstream_8h_source.html#l00204">ifstream::open()</a>, <a class="el" href="fstream_8h_source.html#l00276">ofstream::open()</a>, et <a class="el" href="_arduino_files_8h_source.html#l00108">PrintFile::write()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaec8ca9b102cdb9909960083a1b38d90c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const pin_map_t pinMap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">= {</div><div class="line">  {&amp;DDRD, &amp;PIND, &amp;PORTD, 0},  </div><div class="line">  {&amp;DDRD, &amp;PIND, &amp;PORTD, 1},  </div><div class="line">  {&amp;DDRD, &amp;PIND, &amp;PORTD, 2},  </div><div class="line">  {&amp;DDRD, &amp;PIND, &amp;PORTD, 3},  </div><div class="line">  {&amp;DDRD, &amp;PIND, &amp;PORTD, 4},  </div><div class="line">  {&amp;DDRD, &amp;PIND, &amp;PORTD, 5},  </div><div class="line">  {&amp;DDRD, &amp;PIND, &amp;PORTD, 6},  </div><div class="line">  {&amp;DDRD, &amp;PIND, &amp;PORTD, 7},  </div><div class="line">  {&amp;DDRB, &amp;PINB, &amp;PORTB, 0},  </div><div class="line">  {&amp;DDRB, &amp;PINB, &amp;PORTB, 1},  </div><div class="line">  {&amp;DDRB, &amp;PINB, &amp;PORTB, 2},  </div><div class="line">  {&amp;DDRB, &amp;PINB, &amp;PORTB, 3},  </div><div class="line">  {&amp;DDRB, &amp;PINB, &amp;PORTB, 4},  </div><div class="line">  {&amp;DDRB, &amp;PINB, &amp;PORTB, 5},  </div><div class="line">  {&amp;DDRC, &amp;PINC, &amp;PORTC, 0},  </div><div class="line">  {&amp;DDRC, &amp;PINC, &amp;PORTC, 1},  </div><div class="line">  {&amp;DDRC, &amp;PINC, &amp;PORTC, 2},  </div><div class="line">  {&amp;DDRC, &amp;PINC, &amp;PORTC, 3},  </div><div class="line">  {&amp;DDRC, &amp;PINC, &amp;PORTC, 4},  </div><div class="line">  {&amp;DDRC, &amp;PINC, &amp;PORTC, 5}   </div><div class="line">}</div></div><!-- fragment -->
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00106">106</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga0376be5904d0dd864b7d97c9ce1295ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Définition à la ligne <a class="el" href="_digital_pin_8h_source.html#l00048">48</a> du fichier <a class="el" href="_digital_pin_8h_source.html">DigitalPin.h</a>.</p>
+
+<p>Référencé par <a class="el" href="_fat_volume_8h_source.html#l00316">FatVolume::blockOfCluster()</a>, <a class="el" href="_fat_volume_8cpp_source.html#l00255">FatVolume::fatPut()</a>, <a class="el" href="_fmt_number_8cpp_source.html#l00234">fmtFloat()</a>, <a class="el" href="_fmt_number_8h_source.html#l00026">isSpace()</a>, <a class="el" href="_fat_file_8h_source.html#l00557">FatFile::open()</a>, <a class="el" href="_digital_pin_8h_source.html#l00627">DigitalPin&lt; PinNumber &gt;::operator=()</a>, <a class="el" href="_stdio_stream_8cpp_source.html#l00296">StdioStream::printDec()</a>, <a class="el" href="_fat_file_print_8cpp_source.html#l00201">FatFile::printField()</a>, <a class="el" href="_fat_file_print_8cpp_source.html#l00158">printFieldT()</a>, <a class="el" href="istream_8h_source.html#l00310">istream::seekg()</a>, et <a class="el" href="_sd_spi_card_8h_source.html#l00245">SdSpiCard::type()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

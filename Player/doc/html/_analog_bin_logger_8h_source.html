@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>vérénaV:  Fichier source de /Volumes/myDoc/Arduino/libraries/SdFat/examples/AnalogBinLogger/AnalogBinLogger.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">vérénaV
+   &#160;<span id="projectnumber">v2 - est-tu-là</span>
+   </div>
+   <div id="projectbrief">audio player for urban ballade</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="pages.html"><span>Pages&#160;associées</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Espaces&#160;de&#160;nommage</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li><a href="examples.html"><span>Exemples</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c69eab56e059d8c90f032dd13c50f52a.html">SdFat</a></li><li class="navelem"><a class="el" href="dir_aafccd6498528b1aad82946f3c90d8f4.html">examples</a></li><li class="navelem"><a class="el" href="dir_1bb5ac6a0eacb22e69e375d148f6fbd2.html">AnalogBinLogger</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AnalogBinLogger.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_analog_bin_logger_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef AnalogBinLogger_h</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define AnalogBinLogger_h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// First block of file.</span></div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structmetadata__t.html">    5</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structmetadata__t.html">metadata_t</a> {</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structmetadata__t.html#af746016b4becc63c0ced75e50dd41b15">    6</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code" href="structmetadata__t.html#af746016b4becc63c0ced75e50dd41b15">adcFrequency</a>;     <span class="comment">// ADC clock frequency</span></div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structmetadata__t.html#a09507ecd9714385e434896d07d5f5222">    7</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code" href="structmetadata__t.html#a09507ecd9714385e434896d07d5f5222">cpuFrequency</a>;     <span class="comment">// CPU clock frequency</span></div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structmetadata__t.html#abbc7316a6baeb99db921f060228f8006">    8</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code" href="structmetadata__t.html#abbc7316a6baeb99db921f060228f8006">sampleInterval</a>;   <span class="comment">// Sample interval in CPU cycles.</span></div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structmetadata__t.html#a2f5ba457c67ecafdec4d49324e80a917">    9</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code" href="structmetadata__t.html#a2f5ba457c67ecafdec4d49324e80a917">recordEightBits</a>;  <span class="comment">// Size of ADC values, nonzero for 8-bits.</span></div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structmetadata__t.html#aa0c135a79887d4a011349bfa261d7238">   10</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code" href="structmetadata__t.html#aa0c135a79887d4a011349bfa261d7238">pinCount</a>;         <span class="comment">// Number of analog pins in a sample.</span></div><div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structmetadata__t.html#a9f6c77edcd5073801a7d7d202001b4ae">   11</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  <a class="code" href="structmetadata__t.html#a9f6c77edcd5073801a7d7d202001b4ae">pinNumber</a>[123];   <span class="comment">// List of pin numbers in a sample.</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Data block for 8-bit ADC mode.</span></div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_analog_bin_logger_8h.html#aedd0d576e0ca69f47fdddb6dc95f6d8a">   15</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="_analog_bin_logger_8h.html#aedd0d576e0ca69f47fdddb6dc95f6d8a">DATA_DIM8</a> = 508;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structblock8__t.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structblock8__t.html">block8_t</a> {</div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structblock8__t.html#ac76f4930b8a88aa187223d115cf0adb5">   17</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structblock8__t.html#ac76f4930b8a88aa187223d115cf0adb5">count</a>;    <span class="comment">// count of data values</span></div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structblock8__t.html#ad94aaab75cb1a00627c59db9f7f95b53">   18</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structblock8__t.html#ad94aaab75cb1a00627c59db9f7f95b53">overrun</a>;  <span class="comment">// count of overruns since last block</span></div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structblock8__t.html#ac06b34d222a4d027063174c7eaef6ce5">   19</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  data[<a class="code" href="_analog_bin_logger_8h.html#aedd0d576e0ca69f47fdddb6dc95f6d8a">DATA_DIM8</a>];</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Data block for 10-bit ADC mode.</span></div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="_analog_bin_logger_8h.html#a1c018512bbd473f670dd9a740ab3cbc4">   23</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="_analog_bin_logger_8h.html#a1c018512bbd473f670dd9a740ab3cbc4">DATA_DIM16</a> = 254;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structblock16__t.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structblock16__t.html">block16_t</a> {</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structblock16__t.html#a22f9ccc73ab9a901dd7aa5e167d8f7fc">   25</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structblock16__t.html#a22f9ccc73ab9a901dd7aa5e167d8f7fc">count</a>;    <span class="comment">// count of data values</span></div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structblock16__t.html#acb59990c3e3f6a49a60225daea5026e9">   26</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structblock16__t.html#acb59990c3e3f6a49a60225daea5026e9">overrun</a>;  <span class="comment">// count of overruns since last block</span></div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structblock16__t.html#a60ddda43018336bd0ca5f1430ec27cc4">   27</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> data[<a class="code" href="_analog_bin_logger_8h.html#a1c018512bbd473f670dd9a740ab3cbc4">DATA_DIM16</a>];</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//------------------------------------------------------------------------------</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Data block for PC use</span></div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structadcdata__t.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structadcdata__t.html">adcdata_t</a> {</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structadcdata__t.html#a8a0b530f98b027846b6d7936b5d6ab06">   32</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structadcdata__t.html#a8a0b530f98b027846b6d7936b5d6ab06">count</a>;    <span class="comment">// count of data values</span></div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structadcdata__t.html#a31b51866a5a1136ebe559c60873f518a">   33</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="structadcdata__t.html#a31b51866a5a1136ebe559c60873f518a">overrun</a>;  <span class="comment">// count of overruns since last block</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">union </span>{</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structadcdata__t.html#abf572ba7b88a49019ee4afe0d7844961">   35</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>  u8[<a class="code" href="_analog_bin_logger_8h.html#aedd0d576e0ca69f47fdddb6dc95f6d8a">DATA_DIM8</a>];</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structadcdata__t.html#a12b55a7908a4a8d051a38aeb8b02d7b1">   36</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> u16[<a class="code" href="_analog_bin_logger_8h.html#a1c018512bbd473f670dd9a740ab3cbc4">DATA_DIM16</a>];</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  } data;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif  // AnalogBinLogger_h</span></div><div class="ttc" id="structblock16__t_html"><div class="ttname"><a href="structblock16__t.html">block16_t</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00024">AnalogBinLogger.h:24</a></div></div>
+<div class="ttc" id="_analog_bin_logger_8h_html_aedd0d576e0ca69f47fdddb6dc95f6d8a"><div class="ttname"><a href="_analog_bin_logger_8h.html#aedd0d576e0ca69f47fdddb6dc95f6d8a">DATA_DIM8</a></div><div class="ttdeci">const size_t DATA_DIM8</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00015">AnalogBinLogger.h:15</a></div></div>
+<div class="ttc" id="structmetadata__t_html"><div class="ttname"><a href="structmetadata__t.html">metadata_t</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00005">AnalogBinLogger.h:5</a></div></div>
+<div class="ttc" id="_analog_bin_logger_8h_html_a1c018512bbd473f670dd9a740ab3cbc4"><div class="ttname"><a href="_analog_bin_logger_8h.html#a1c018512bbd473f670dd9a740ab3cbc4">DATA_DIM16</a></div><div class="ttdeci">const size_t DATA_DIM16</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00023">AnalogBinLogger.h:23</a></div></div>
+<div class="ttc" id="structmetadata__t_html_a09507ecd9714385e434896d07d5f5222"><div class="ttname"><a href="structmetadata__t.html#a09507ecd9714385e434896d07d5f5222">metadata_t::cpuFrequency</a></div><div class="ttdeci">unsigned long cpuFrequency</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00007">AnalogBinLogger.h:7</a></div></div>
+<div class="ttc" id="structblock8__t_html_ad94aaab75cb1a00627c59db9f7f95b53"><div class="ttname"><a href="structblock8__t.html#ad94aaab75cb1a00627c59db9f7f95b53">block8_t::overrun</a></div><div class="ttdeci">unsigned short overrun</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00018">AnalogBinLogger.h:18</a></div></div>
+<div class="ttc" id="structblock16__t_html_a22f9ccc73ab9a901dd7aa5e167d8f7fc"><div class="ttname"><a href="structblock16__t.html#a22f9ccc73ab9a901dd7aa5e167d8f7fc">block16_t::count</a></div><div class="ttdeci">unsigned short count</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00025">AnalogBinLogger.h:25</a></div></div>
+<div class="ttc" id="structmetadata__t_html_abbc7316a6baeb99db921f060228f8006"><div class="ttname"><a href="structmetadata__t.html#abbc7316a6baeb99db921f060228f8006">metadata_t::sampleInterval</a></div><div class="ttdeci">unsigned long sampleInterval</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00008">AnalogBinLogger.h:8</a></div></div>
+<div class="ttc" id="structadcdata__t_html"><div class="ttname"><a href="structadcdata__t.html">adcdata_t</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00031">AnalogBinLogger.h:31</a></div></div>
+<div class="ttc" id="structmetadata__t_html_a9f6c77edcd5073801a7d7d202001b4ae"><div class="ttname"><a href="structmetadata__t.html#a9f6c77edcd5073801a7d7d202001b4ae">metadata_t::pinNumber</a></div><div class="ttdeci">unsigned long pinNumber[123]</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00011">AnalogBinLogger.h:11</a></div></div>
+<div class="ttc" id="structblock8__t_html_ac76f4930b8a88aa187223d115cf0adb5"><div class="ttname"><a href="structblock8__t.html#ac76f4930b8a88aa187223d115cf0adb5">block8_t::count</a></div><div class="ttdeci">unsigned short count</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00017">AnalogBinLogger.h:17</a></div></div>
+<div class="ttc" id="structadcdata__t_html_a8a0b530f98b027846b6d7936b5d6ab06"><div class="ttname"><a href="structadcdata__t.html#a8a0b530f98b027846b6d7936b5d6ab06">adcdata_t::count</a></div><div class="ttdeci">unsigned short count</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00032">AnalogBinLogger.h:32</a></div></div>
+<div class="ttc" id="structmetadata__t_html_aa0c135a79887d4a011349bfa261d7238"><div class="ttname"><a href="structmetadata__t.html#aa0c135a79887d4a011349bfa261d7238">metadata_t::pinCount</a></div><div class="ttdeci">unsigned long pinCount</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00010">AnalogBinLogger.h:10</a></div></div>
+<div class="ttc" id="structmetadata__t_html_a2f5ba457c67ecafdec4d49324e80a917"><div class="ttname"><a href="structmetadata__t.html#a2f5ba457c67ecafdec4d49324e80a917">metadata_t::recordEightBits</a></div><div class="ttdeci">unsigned long recordEightBits</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00009">AnalogBinLogger.h:9</a></div></div>
+<div class="ttc" id="structmetadata__t_html_af746016b4becc63c0ced75e50dd41b15"><div class="ttname"><a href="structmetadata__t.html#af746016b4becc63c0ced75e50dd41b15">metadata_t::adcFrequency</a></div><div class="ttdeci">unsigned long adcFrequency</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00006">AnalogBinLogger.h:6</a></div></div>
+<div class="ttc" id="structblock16__t_html_acb59990c3e3f6a49a60225daea5026e9"><div class="ttname"><a href="structblock16__t.html#acb59990c3e3f6a49a60225daea5026e9">block16_t::overrun</a></div><div class="ttdeci">unsigned short overrun</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00026">AnalogBinLogger.h:26</a></div></div>
+<div class="ttc" id="structblock8__t_html"><div class="ttname"><a href="structblock8__t.html">block8_t</a></div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00016">AnalogBinLogger.h:16</a></div></div>
+<div class="ttc" id="structadcdata__t_html_a31b51866a5a1136ebe559c60873f518a"><div class="ttname"><a href="structadcdata__t.html#a31b51866a5a1136ebe559c60873f518a">adcdata_t::overrun</a></div><div class="ttdeci">unsigned short overrun</div><div class="ttdef"><b>Definition:</b> <a href="_analog_bin_logger_8h_source.html#l00033">AnalogBinLogger.h:33</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
