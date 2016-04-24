@@ -20,13 +20,16 @@
 #include <avr/sleep.h>
 #include <avr/wdt.h>
 
+
+
+
 // watchdog interrupt
 ISR (WDT_vect) 
 {
    wdt_disable();  // disable watchdog
 }  // end of WDT_vect
 
-const byte theInitID=0;
+const byte theInitID=154;
 
 ThePlayer myPlayer;
 
@@ -38,7 +41,7 @@ void setup() {
   delay(20);
   Serial.println("ON");
   printf_begin();
-  printf_P(PSTR("printf ok\n\r"));
+  //printf_P(PSTR("printf ok\n\r"));
   delay(100);
   myPlayer.init(theInitID); //init the player
 }

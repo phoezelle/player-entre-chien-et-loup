@@ -571,7 +571,7 @@ void TheRemote::sendValue(bool manual){
   initMenu(true);
 }
 
-void TheRemote::sendID(){
+/*void TheRemote::sendID(){
   clearLCD();
   selectLineOne(0);
   myLCD.write("updating ID");
@@ -581,7 +581,7 @@ void TheRemote::sendID(){
     delay(500);
   }
   initMenu(true);
-}
+}*/
 
 void TheRemote::getValue(bool manual){
   clearLCD();
@@ -1133,7 +1133,7 @@ bool TheRemote::buttonRoutine() {
     R_IF_SERIAL_DEBUG(printf_P(PSTR("buttonUPDATE pressed \n\r")));
     //uptade value on player/base
     if (connecting) return true;
-    if(value[VALUE_CONNECT]==1 && currentMenu==104 && !editValue) {updateSendingAddress() ; sendID();return true;}
+    //if(value[VALUE_CONNECT]==1 && currentMenu==104 && !editValue) {updateSendingAddress() ; sendID();return true;}
     if(value[VALUE_CONNECT]==1 && !editValue) {updateSendingAddress(); sendValue();}
   }
   return false;

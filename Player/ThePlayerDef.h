@@ -18,6 +18,8 @@
 
 #define DEFAULT_VOLUME 11 /**< \brief volume is set default each startup*/
 
+#define TIME_BEFORE_BASE_SLEEP 720 /**< \brief in minutes default 720min*/
+
 /**@}*/
 
 // *******************************************

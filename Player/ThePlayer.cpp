@@ -170,7 +170,7 @@ void ThePlayer::init(byte initID) {
   maxValue[VALUE_DAY] = MAX_VALUE_DAY;
   
 	delay(2);
-	I_IF_SERIAL_DEBUG(printf_P(PSTR("VVdispo V2.0 9/10/15")));
+	I_IF_SERIAL_DEBUG(printf_P(PSTR("VVdispo V2.1 24/04/16")));
   
 	initPin();
 	initRole();
@@ -383,7 +383,7 @@ byte ThePlayer::checkIncommingRF(){
             counterGoodMessage=0;
             for (byte i = NB_VALUE_STORED; i > 0; i--) {
               byte j=i-1;
-              if((j!=VALUE_ID_DISPO && code==CODE_SET_VALUE) || (j==VALUE_ID_DISPO && code==CODE_SET_ID)){
+              if(j!=VALUE_ID_DISPO && code==CODE_SET_VALUE){
                 getIndexedValueFromMessage(received,j);
                 eepromWrite(j);
               }else{
@@ -644,7 +644,7 @@ void ThePlayer::logInSD(byte start){
     logfile << endl << endl << "ON ID=" << int(value[VALUE_ID_DISPO]) << " day=" << int(value[VALUE_DAY]) << " batt=" << bat <<"	";
   }
   else {
-    logfile <<int((unsigned long)(millis()/60000))<<"'"<< int((unsigned long)(millis()%60000)/1000)<<" : " ;
+    logfile <<"["<< value[VALUE_LANG] << "]" << int((unsigned long)(millis()/60000))<<"'"<< int((unsigned long)(millis()%60000)/1000)<<" : " ;
     if(start==1){
       if(tempsIntersceneJoue!=0)logfile <<"(+" << tempsIntersceneJoue <<"s) ";
       logfile << int(currentPlayingInfo[PLAYING_TRACK]) << "	- ";
@@ -803,7 +803,7 @@ void ThePlayer::checkToPlayTrack(bool print) {
 // *************************************************************************************
 
 void ThePlayer::runBaseLoop(){
-  activateBase();
+
   I_IF_SERIAL_DEBUG(printf_P(PSTR("\n\r ENTERING BASE LOOP MODE\n\r")));
   
   const byte player_ammount = 101;
@@ -829,7 +829,7 @@ void ThePlayer::runBaseLoop(){
   M_IF_SERIAL_DEBUG(printf_P(PSTR("\n\r(free memory = %u) - "),freeMemory()););
   //entering the loop
   while (1){
-    
+
     unsigned long startTime = millisCorrected();
     radio.stopListening();
     
@@ -879,13 +879,13 @@ void ThePlayer::runBaseLoop(){
       
     }
     //M_IF_SERIAL_DEBUG(printf_P(PSTR("%u ms listening phase\n\r"),millisCorrected()-startTime));
-    M_IF_SERIAL_DEBUG(printf_P(PSTR("\n\r")));
+    M_IF_SERIAL_DEBUG(printf_P(PSTR("END SEND PLAYER\n\r")));
     
     if ((unsigned long)(millisCorrected()%60000)<600) {
       timeStartOnBase++;
       M_IF_SERIAL_DEBUG(printf_P(PSTR("--> %u min  check sleepTotal\n\r\n\r"),timeStartOnBase));
     }
-    if(timeStartOnBase > 720)baseSleepTotal();
+    if(timeStartOnBase > TIME_BEFORE_BASE_SLEEP)baseSleepTotal();
   }
 }
 
@@ -1000,9 +1000,13 @@ void ThePlayer::baseSleep(){
 }
 
 void ThePlayer::activateBase(){
-  timeBeforeTotalSleep=720; //12h x 60min
-  timeStartOnBase=0;
+  if(timeStartOnBase > TIME_BEFORE_BASE_SLEEP){
+    timeStartOnBase=0;
+    asm volatile ("  jmp 0");
+  }
+  
 }
+
 
 
 
